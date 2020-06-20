@@ -10,3 +10,57 @@
 
 /* Pages / Views */
 // @import "pages/registration";
+*{
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  display: inline-block;
+  margin-right: 10px;
+}
+.flexbox-container {
+  display: grid;
+  border: 1px solid black;
+  grid-template-areas: 
+  'sidebar bar bar bar bar bar bar'
+  'sidebar main main main main main main';
+}
+
+/*SIDEDAB*/ 
+.sidebar-container {
+  border: 1px solid red;
+  grid-area: sidebar;
+  background-color: gray;
+  
+}
+
+.fa-bars {
+  display: inline-block;
+}
+
+/*TOP BAR*/
+.top-bar-container {
+  border: 1px solid green;
+  grid-area: bar;
+  
+}
+.nav li {
+  display: inline-block;
+  border: 1px solid gray;
+  
+}
+.nav-links > ul {
+  list-style-type: none;
+  
+}
+.main-container {
+  border: 1px solid green;
+  grid-area: main;
+}
