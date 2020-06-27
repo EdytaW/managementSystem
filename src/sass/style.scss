@@ -25,24 +25,27 @@ body {
 }
 
 .grid-container {
-  display: grid;
-  border: 1px solid black;
-  grid-template-areas: 'sidebar bar bar bar bar bar bar bar bar bar bar bar' 'sidebar main main main main main main main main main main main';
+  display: flex;
+  // grid-template-areas: 'sidebar bar bar bar bar bar bar bar bar bar bar bar' 'sidebar main main main main main main main main main main main';
 }
 
 /*SIDEBAR*/ 
 h1 {
   font-family: 'Dancing Script', cursive;
   color: white;
-  display: inline-block;
   margin-left: 10px;
 }
 
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
 .sidebar-container {
-  border: 1px solid red;
-  grid-area: sidebar;
+  // grid-area: sidebar;
   background-color: $sidebar-color;
-  
 }
 
 .fa-bars {
@@ -64,27 +67,86 @@ a {
 
 .fa-star, .fa-link {
   padding-bottom: 10px;
+  padding-right: 20px;
 }
 
 /*TOP BAR*/
+.top-bar-container {
+  background-color: white;
+  // width: 100vh;
+}
+
 .user-bar {
   display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 25px;
+  width: 25px;
 }
 
 /*MAIN*/
-.main-container {
-  border: 1px solid green;
-  grid-area: main;
-}
 
 .section-general-statistic {
   margin: 20px;
   background-color: white;
   height: 800px;
+  // width: 100vh;
 }  
 
 .section-links{
   margin: 20px;
   background-color: white;
   height: 800px;
+  // width: 100vh;
+}
+
+button {
+  background-color: orange;
+  height: 25px;
+  width: 25px;
+}
+
+.form-data {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid grey;
+}
+
+/*List of links*/
+
+.button-new {
+  height: 25px;
+  width: 90px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.section-links {
+  text-align: center;
+}
+
+.section-title {
+  text-align: left;
+  border-bottom: 1px solid grey;
+}
+
+.link-list{
+  color: blue;
+  padding-left: 50px;
+}
+
+ul {
+  list-style-type: none;
+  line-height: 2.0;
+  border-top: 1px solid grey;
+  margin-top: 20px;
+}
+
+.line{
+  border-bottom: 1px solid grey;;
+}
+
+.link-list-sidebar{
+  border-top: none;
 }
