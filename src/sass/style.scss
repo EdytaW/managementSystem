@@ -26,6 +26,7 @@ body {
 
 .grid-container {
   display: flex;
+  // justify-content: space-around;
   // grid-template-areas: 'sidebar bar bar bar bar bar bar bar bar bar bar bar' 'sidebar main main main main main main main main main main main';
 }
 
@@ -44,7 +45,6 @@ h1 {
 }
 
 .sidebar-container {
-  // grid-area: sidebar;
   background-color: $sidebar-color;
 }
 
@@ -70,19 +70,49 @@ a {
   padding-right: 20px;
 }
 
+.link-list-sidebar {
+  width: 100%;
+}
+
 /*TOP BAR*/
 .top-bar-container {
   background-color: white;
   // width: 100vh;
 }
 
+.main-container {
+  flex: 1 0 60%;
+}
+
 .user-bar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   background-color: white;
-  height: 25px;
-  width: 25px;
+  width: 100%;
+  justify-content: flex-end;
+
+  img {
+    height: 20px;
+  }
+
+  .wallet {
+    padding-right: 20px;
+  }
+  
+  span {
+    padding-right: 20px;
+  }
+
+  .bell {
+    padding-right: 20px;
+  }
+
+  .profile {
+    padding-right: 20px;
+  }
 }
+
 
 /*MAIN*/
 
@@ -131,6 +161,10 @@ button {
   border-bottom: 1px solid grey;
 }
 
+.list {
+  margin-top: 20px;
+}
+
 .link-list{
   color: blue;
   padding-left: 50px;
@@ -141,6 +175,8 @@ ul {
   line-height: 2.0;
   border-top: 1px solid grey;
   margin-top: 20px;
+  width: 40%;
+  margin: 0 auto;
 }
 
 .line{
@@ -149,4 +185,23 @@ ul {
 
 .link-list-sidebar{
   border-top: none;
+  margin-left: 0;
 }
+
+@media(max-width: 767px) {
+  .user-bar{
+    justify-content: flex-start;
+  }
+}
+
+// @media(min-width: 768px) {
+//   @include grid('md');
+// }
+
+// @media(min-width: 992px) {
+//   @include grid('lg');
+// }
+
+// @media(min-width: 1200px) {
+//   @include grid('xl');
+// }
