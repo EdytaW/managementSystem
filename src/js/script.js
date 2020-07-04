@@ -1,11 +1,3 @@
-// function toggleMenu(visible) {
-//   document.querySelector('.menu').classList.toggle('show', visible)
-// }
-
-// document.querySelector('.hamburger').addEventListener('click', function(e) {
-//   e.preventDefault();
-//   toggleMenu()
-// });
 
 function closeModal() {
   document.getElementById('overlay').classList.remove('show');
@@ -18,24 +10,10 @@ document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
   });
 }); 
   
-document.querySelector('#overlay').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closeModal();
-  }
-});
-
-// function openModal(modal) {
-//   document.querySelectorAll('#overlay > *').forEach(function(modal) {
-//     modal.classList.remove('show');
-//   });
-//   document.querySelector('#overlay').classList.add('show');
-//   document.querySelector(modal).classList.add('show');
-// }
-
 var ctx = document.getElementById('myChart').getContext('2d');
 
 /*global Chart*/
-new Chart(ctx, {
+var chart = new Chart(ctx, {
   // 1
   type: 'bar',
   data: {
@@ -67,3 +45,6 @@ new Chart(ctx, {
     }]
   },
 });
+
+chart.canvas.parentNode.style.height = '128px';
+
