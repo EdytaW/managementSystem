@@ -46,16 +46,20 @@
       </div>
       <div class="section-general-statistic">
         <h2 class="section-title">General statistic</h2>
-        <form class = "form-data" action="">
-          <input type="text">
-          <input type="date" name="dateValue" >
-          <button class="button-color"></button>
-          <canvas id="myChart"></canvas>
-        </form>
+        <div class="data">
+          <div class = "form-data">
+            <input type="data" value="2020-06-07">
+            <input type="date" name="dateValue">
+          </div>
+          <button class="btn"><img class="refresh" src="./icons/refresh.svg" alt=""></button>
+        </div>  
+        <div class="chart">
+          <canvas id="myChart" width="858" height="480" style="display: block; width: 858px; height: 480px;"></canvas>
+        </div>
       </div>
       <div class="section-links">
         <h2 class="section-title">Links</h2>
-        <button class="button color button-new">+add new</button>
+        <button class="btn button-new">+add new</button>
         <ul class="list">
           <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
           <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
@@ -64,21 +68,8 @@
           <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
           <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
         </ul> 
-         <button class="button color button-new">+add new</button>
+         <button class="btn button-new">+add new</button>
       </div>
-      <!-- <div class="overlay" id="overlay"> -->
-        <!-- Tutaj będą nasze modale -->
-        <!-- <div class="overlay" id="overlay">
-          <div class="modal" id="myModal">
-            <div class="btn-close js--close-modal">x</div>
-        
-            <h4>Witaj w modalu!</h4>
-            <p>Lorem ipsum dolor sit amet...</p>
-        
-            <button class="js--close-modal">Okay</button>
-          </div>
-        </div>
-      </div>  -->
     </section>
     
   </div>
