@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="grid-container">
+    <section class="sidebar-container">
+      <div class="logo">
+        <h1>Just do it</h1>
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul class="link-list-sidebar">
+        <li><a href="#"><img src="./icons/general.svg">  General</a></li>
+        <li><a href="#"><img src="./icons/details.svg">  Details</a></li>
+        <li><a href="#"><img src="./icons/links.svg">  Links</a></li>
+        <li><a href="#"><img src="./icons/banners.svg">  Banners</a></li>
+        <li><a href="#"><img src="./icons/personaldata.svg">  Personal Data</a></li>
+        <li><a href="#"><img src="./icons/payout.svg">  Payout</a></li>
+        <li><a href="#"><img src="./icons/postback.svg">  Postback</a></li>
+      </ul>
+      <div class="manager">
+        <h3 class>YOUR MANAGER</h3>
+        <div>
+          <img src="https://images.pexels.com/photos/4348270/pexels-photo-4348270.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+          <p>Mikheal E.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-container">
+      <div class="top-bar-container">
+        <div class="user-bar">
+          <img class = "wallet" src="./icons/wallet.svg" alt="wallet"><span>1500.00</span>
+          <img class = "bell" src="./icons/notification.svg"  alt="bell">
+          <img class = "profile" src="./icons/profile.svg"  alt="profile"><span>Leonardo Dicaprio</span>
+          <img src="./icons/quit.svg"  class="picture-quit" alt="quit">
+        </div>
+      </div>
+      <div class="section-general-statistic">
+        <h2 class="section-title">General statistic</h2>
+        <div class="data">
+          <div class = "form-data">
+            <input type="data" value="2020-06-07">
+            <input type="date" name="dateValue">
+          </div>
+          <button class="btn"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 16 17" style="enable-background:new 0 0 16 17;" xml:space="preserve">
+         <path d="M11,6h5V1h-1v3.3l-1.2-1.1c-2.9-2.9-7.7-2.9-10.6,0c-2.9,2.9-2.9,7.7,0,10.6C4.7,15.3,6.6,16,8.5,16s3.8-0.7,5.3-2.2
+           l-0.7-0.7c-2.5,2.5-6.7,2.5-9.2,0c-2.5-2.5-2.5-6.7,0-9.2c2.5-2.5,6.7-2.5,9.2,0L14.2,5H11V6z"/>
+         </svg></button>
+        </div>  
+        <div class="chart">
+          <canvas id="myChart" width="858" height="480" style="display: block; width: 858px; height: 480px;"></canvas>
+        </div>
+      </div>
+      <div class="section-links">
+        <h2 class="section-title">Links</h2>
+        <button class="btn button-new">+add new</button>
+        <ul class="list">
+          <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
+          <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
+          <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
+          <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
+          <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
+          <li class="line">Home page <a class = "link-list" href="https://www.google.pl">https://www.google.pl/</a></li>
+        </ul> 
+         <button class="btn button-new">+add new</button>
+      </div>
+    </section>
+    
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
