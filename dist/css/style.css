@@ -378,6 +378,7 @@ h1 {
   background-color: #333333;
   position: fixed;
   height: 100vh;
+  z-index: 1;
 }
 
 .fa-bars {
@@ -411,6 +412,10 @@ a {
       flex-direction: column;
   font-size: 15px;
   padding: 0 16px;
+}
+
+.link-list-sidebar a {
+  color: #979797;
 }
 
 .link-list-sidebar img {
@@ -476,20 +481,32 @@ a {
   border-bottom: 2px solid gray;
 }
 
-.user-bar img {
-  height: 20px;
+.user-bar .top-cell {
   border-right: 1px solid gray;
   border-left: 1px solid gray;
+  padding: 10px 0;
 }
 
-.user-bar .wallet {
-  padding-right: 20px;
+.user-bar img {
+  height: 17px;
+}
+
+.user-bar .arrow {
+  height: 17px;
+  width: 17px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 8px;
+}
+
+.user-bar .wallet, .user-bar .quit {
+  padding-right: 10px;
   padding-left: 20px;
 }
 
 .user-bar span {
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .user-bar .bell {
@@ -505,15 +522,61 @@ a {
 /*MAIN*/
 .section-general-statistic {
   margin-left: 220px;
-  margin-top: 50px;
+  margin-top: 90px;
   margin-bottom: 20px;
   margin-right: 20px;
   background-color: white;
   height: 800px;
 }
 
+h2 {
+  color: #979797;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-data {
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #E3E3E3;
+  margin-right: 15px;
+}
+
+input {
+  padding: 9px;
+  width: 170px;
+  margin: 0;
+  outline-style: none;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+
+.table {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 700px;
+  margin: 0 auto;
+}
+
+.table-cell {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 2px solid grey;
+}
+
+.box {
+  -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+  color: gray;
+}
+
 .chart {
-  margin: 16px;
+  margin: 20px;
 }
 
 .section-links {
@@ -540,10 +603,14 @@ a {
   width: 25px;
   display: inline-block;
   margin-left: 10px;
+  border: none;
+  border-radius: 4px;
 }
 
 .btn svg {
   fill: white;
+  width: 17px;
+  padding: 2px;
 }
 
 /*List of links*/
@@ -553,6 +620,7 @@ a {
   display: inline-block;
   margin: 0 auto;
   margin-top: 20px;
+  color: white;
 }
 
 .section-links {
